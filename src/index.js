@@ -51,6 +51,7 @@ ctaImg.src = siteContent.images['cta-img'];
 const middleImg = document.querySelector('#middle-img');
 middleImg.src = siteContent.images['accent-img'];
 
+
 //navigation
 const navLinks = document.querySelectorAll('header nav a');
 const navLinkText = Object.values(siteContent.nav);
@@ -59,3 +60,11 @@ navLinks.forEach((link, index) => {
   link.textContent = navLinkText[index];
   link.classList.add('italic');
 });
+
+
+//Call to action
+const ctaText = document.querySelector('.cta .cta-text h1');
+ctaText.textContent = siteContent.cta['h1'];
+
+const ctaButton = document.querySelector('.cta .cta-text button');
+ctaButton.textContent = siteContent.cta['button'];
