@@ -91,9 +91,15 @@ pBottom[0].textContent = siteContent['main-content']['services-content'];
 pBottom[1].textContent = siteContent['main-content']['product-content'];
 pBottom[2].textContent = siteContent['main-content']['vision-content'];
 
+
 //contact
 const contact = document.querySelector('section.contact');
 contact.querySelector('h4').textContent = siteContent.contact['contact-h4'];
 contact.children[1].textContent = siteContent.contact['address'];
 contact.children[2].textContent = siteContent.contact['phone'];
 contact.children[3].textContent = siteContent.contact['email'];
+
+//footer
+const footerLink = document.querySelector('footer a');
+footerLink.textContent = siteContent.footer.copyright;
+footerLink.classList.add('bold');
